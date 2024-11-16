@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="welcome to course mangament &#xD;&#xA;                   system" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" Height="76" Width="344" FontSize="24"/>
+        <PasswordBox HorizontalAlignment="Center" Margin="0,268,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="18" Name="passtext"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="30" FontSize="18" Name="emailtext"/>
+        <Label Content="email" HorizontalAlignment="Left" Margin="248,187,0,0" VerticalAlignment="Top" Height="30" Width="53" FontSize="16"/>
+        <Label Content="pass" HorizontalAlignment="Left" Margin="248,268,0,0" VerticalAlignment="Top" Height="30" Width="53" FontSize="16"/>
+        <Button Content="log in" HorizontalAlignment="Center" Margin="0,354,0,0" VerticalAlignment="Top" Height="33" Width="112" FontSize="18" x:Name="login" Click="login_Click"/>
+
+    </Grid>
+</Window>

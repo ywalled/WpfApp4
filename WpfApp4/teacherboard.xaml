@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp4.teacherboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="teacherboard" Height="450" Width="800">
+    <Grid>
+        <TextBox  x:Name="course_des" HorizontalAlignment="Left" Margin="90,31,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="169" Height="25"/>
+        <TextBox x:Name="course_title"  HorizontalAlignment="Left" Margin="90,92,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="169" Height="28"/>
+        <Label Content="description" HorizontalAlignment="Left" Margin="15,26,0,0" VerticalAlignment="Top" Height="25" Width="70"/>
+        <Label Content="title" HorizontalAlignment="Left" Margin="29,90,0,0" VerticalAlignment="Top" Height="28" Width="61" RenderTransformOrigin="5.568,2.137"/>
+        <DataGrid AutoGenerateColumns="True" x:Name="course_avv" Margin="400,234,60,20" SelectionChanged="course_avv_SelectionChanged"></DataGrid>
+        <Label Content="aviliable courses" HorizontalAlignment="Left" Margin="482,190,0,0" VerticalAlignment="Top" Height="39" Width="176" RenderTransformOrigin="5.568,2.137" FontSize="20"/>
+        <Button x:Name="add"  Content="add" HorizontalAlignment="Left" Margin="323,31,0,0" VerticalAlignment="Top" Height="28" Width="49" Click="add_Click"/>
+        <Button x:Name="uptade" Content="update" HorizontalAlignment="Left" Margin="323,91,0,0" VerticalAlignment="Top" Height="26" Width="49" Click="uptade_Click"/>
+        <Button x:Name="delete" Content="delete" HorizontalAlignment="Left" Margin="323,157,0,0" VerticalAlignment="Top" Height="26" Width="49" Click="delete_Click"/>
+        <TextBox x:Name="course_id"  HorizontalAlignment="Left" Margin="90,152,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="169" Height="28"/>
+        <Label Content="id" HorizontalAlignment="Left" Margin="29,152,0,0" VerticalAlignment="Top" Height="28" Width="61" RenderTransformOrigin="5.568,2.137"/>
+        <TextBox x:Name="student_id"  HorizontalAlignment="Left" Margin="90,0,0,0" TextWrapping="Wrap"  VerticalAlignment="Center" Width="169" Height="28"/>
+        <Label Content="student id" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Center" Height="28" Width="75" RenderTransformOrigin="5.568,2.137"/>
+        <Button x:Name="bback" Content="back" HorizontalAlignment="Left" Margin="28,388,0,0" VerticalAlignment="Top" Height="26" Width="49" Click="back_Click"/>
+
+    </Grid>
+</Window>
